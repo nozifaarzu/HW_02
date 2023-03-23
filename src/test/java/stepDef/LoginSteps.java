@@ -11,6 +11,7 @@ import pageObject.login_page;
 
 public class LoginSteps extends Config {
     login_page lp = new login_page(driver);
+
     @Given("user in TalentTEK Homepage")
     public void userInTalentTEKHomepage() {
         // verify page title
@@ -70,7 +71,7 @@ public class LoginSteps extends Config {
 
     @And("user clicks on {string} button")
     public void userClicksOnButton(String buttonText) {
-        driver.findElement(By.xpath("//a[contains(text(),'"+buttonText+"')]")).click();
+        driver.findElement(By.xpath("//a[contains(text(),'" + buttonText + "')]")).click();
         //lp.clickOnCreateButton();
     }
 

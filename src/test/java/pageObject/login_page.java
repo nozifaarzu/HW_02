@@ -61,5 +61,4 @@ public class login_page extends Config {
         String fullText = invalidEmailOrPassErrorMsgLocator.getText();
         String act = fullText.substring(1, fullText.length()-1);
         Assert.assertEquals(act, errorMsg);
-    }
-}
+    }}
